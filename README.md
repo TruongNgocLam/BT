@@ -1,43 +1,120 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-  </head>
-  <body>
-    <h1>Vườn Tâm Trí Tình Xuân Diệu</h1>
+<head>
+<meta charset="UTF-8">
+<title>Đăng ký thông tin cá nhân</title>
 
-    <ol>
-      <li><a href="#camxuc">Cảm xúc</a></li>
-      <li><a href="#voivang">Vội vàng</a></li>
-    </ol>
+<style>
+body{
+    font-family: Arial;
+}
 
-    <h2 id="camxuc">Cảm xúc</h2>
+.form{
+    width: 450px;
+    margin: auto;
+    padding: 20px;
+    border-top: 2px solid gray;
+}
 
-    <p>
-      Làm thi sĩ, nghĩa là ru với gió<br />
-      Mơ theo trăng, và vơ vẩn cùng mây<br />
-      Để linh hồn ràng buộc bởi muôn dây<br />
-      Hay chia sẻ bởi trăm tình yêu mến<br />
-    </p>
+h2{
+    text-align: center;
+}
 
-    <p>
-      Đây là quán tha hồ muôn khách đến<br />
-      Đây là bình thu hợp trí muôn hương<br />
-      Đây là vườn chim nhả hạt mười phương<br />
-      Hoa mật ngọt chen giao trái cây thơm<br />
-    </p>
+table{
+    width: 100%;
+}
 
-    <hr />
+td{
+    padding: 6px;
+}
+</style>
 
-    <h2 id="voivang">Vội vàng</h2>
+</head>
 
-    <p>
-      Tôi muốn tắt nắng đi<br />
-      Cho màu đừng nhạt mất<br />
-      Tôi muốn buộc gió lại<br />
-      Cho hương đừng bay đi<br />
-    </p>
+<body>
 
-    <hr />
-  </body>
+<div class="form">
+
+<h2>ĐĂNG KÝ THÔNG TIN CÁ NHÂN</h2>
+
+<form>
+
+<table>
+
+<tr>
+<td>Tài khoản</td>
+<td><input type="text" name="tk"></td>
+</tr>
+
+<tr>
+<td>Mật khẩu</td>
+<td><input type="password" name="mk"></td>
+</tr>
+
+<tr>
+<td>Nhập lại mật khẩu</td>
+<td><input type="password" name="mk2"></td>
+</tr>
+
+<tr>
+<td>Email</td>
+<td><input type="email" name="email"></td>
+</tr>
+
+<tr>
+<td>Họ tên</td>
+<td><input type="text" name="hoten"></td>
+</tr>
+
+<tr>
+<td>Giới tính</td>
+<td>
+<input type="radio" name="gt" checked> Nam
+<input type="radio" name="gt"> Nữ
+</td>
+</tr>
+
+<tr>
+<td>Quê quán</td>
+<td>
+<select name="qq">
+<option>Cần Thơ</option>
+<option>TP.HCM</option>
+<option>Hà Nội</option>
+<option>Đà Nẵng</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Sở thích</td>
+<td>
+<input type="checkbox" name="st1" checked> Điện ảnh
+<input type="checkbox" name="st2"> Âm nhạc
+<input type="checkbox" name="st3"> Thể thao
+</td>
+</tr>
+
+<tr>
+<td>Ghi chú cá nhân</td>
+<td>
+<textarea rows="4" cols="25"></textarea>
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>
+<input type="submit" value="Lưu">
+<input type="reset" value="Nhập lại">
+</td>
+</tr>
+
+</table>
+
+</form>
+
+</div>
+
+</body>
 </html>
